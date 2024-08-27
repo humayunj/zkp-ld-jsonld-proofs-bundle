@@ -1,0 +1,74 @@
+{
+  "@context": [
+    "https://www.w3.org/2018/credentials/v1",
+    "https://www.w3.org/ns/data-integrity/v1",
+    "https://zkp-ld.org/context.jsonld",
+    "https://schema.org/",
+    {
+      "isPatientOf": "http://example.org/vocab/isPatientOf",
+      "lotNumber": "http://example.org/vocab/lotNumber",
+      "vaccine": {
+        "@id": "http://example.org/vocab/vaccine",
+        "@type": "@id"
+      },
+      "vaccinationDate": {
+        "@id": "http://example.org/vocab/vaccinationDate",
+        "@type": "xsd:dateTime"
+      },
+      "Vaccination": "http://example.org/vocab/Vaccination",
+      "Vaccine": "http://example.org/vocab/Vaccine"
+    }
+  ],
+  "type": "VerifiablePresentation",
+  "proof": {
+    "type": "DataIntegrityProof",
+    "created": "2024-08-17T21:38:51.529Z",
+    "challenge": "abcde",
+    "cryptosuite": "bbs-termwise-proof-2023",
+    "proofPurpose": "authentication",
+    "proofValue": "uomFhWQnaAgAAAAAAAAAAlh-42iMAxYw1XTv9U844wKXrrxGcOPcoPzrL3lI5Q0qmVzFrWfIZzUuWA8DsC28HsufCAjsym5Uav6iJJKNAD_dwZtgMYeXdfUKxrdKIRo2BfxjDTBrMXR7D6QZ2s01strQpneJDmP61ztGguzN56-YN5OaAHyudSUf-n5S1aggYRY21nh4_WbMa--bPnBVksuqaxshDMtNhMlvDJVNsON5UZSdhjAtKV5rkONiOekrKuG_fw78nXMtgSvmupITEAgAAAAAAAAAzhS_iDfdBaGzNzV9J44ClptSMoSnIorQUNEEFtqcuX6_0po1CVKnUA29Up6e2GzyGh5c2DJSD7VXe9c_F0i4VpOGM0ii-8mFFfoRnpXp1POdZTDj54v9Y-iwA0ltVAr_T5p4etveV3vz9PZ5nO7BUJQAAAAAAAACIra0-5XvfYgaE9axA6DlMkl93OM3TH07L_R-qeXlhHlITJ5ZQSbZv2S0AH_b-XZfbw2TF5PG6kO5ENQ0CJDVkHSapMcs-BbDhE9U76KnOOBh5FWv0xfMamWoiha9BMRFL4pprfyyEBgV3LDO6CyfvyYce3CeDT9vGNmcFuAVcXbSKqwnQND1DzqVPcZ-juA7EYWMzMpZi4m7Y1Lpcv0kmkQnb0LSESNujVvZp3ZwlZr0x3cond9dKCl1N-kWqA2cFo3i9AqyNzhfa2x8gtPPyZ-Umn1IBX6K1bO-qoxTZRPUPYQ_HEEc9rMkNPGffEjVrfxshVuT_VlBhj2Y_PY46xrZEzml0J4V8IWt8HpXneaec41_EbhRAA49E2VfQ11irdmX3cP018Dz4rhNJrH5_CcEc0BB0-ZG0cM12ROzWVB0mqTHLPgWw4RPVO-ipzjgYeRVr9MXzGplqIoWvQTERmxNm4khWvE1aC_sRZdwBjpxbLBA4bbvvHJIWGsNP3gUdJqkxyz4FsOET1Tvoqc44GHkVa_TF8xqZaiKFr0ExEXnWgu1N6VniQmESNCSuDqyIw2RdIlAoQGMWNMHsu05zedaC7U3pWeJCYRI0JK4OrIjDZF0iUChAYxY0wey7TnMdJqkxyz4FsOET1Tvoqc44GHkVa_TF8xqZaiKFr0ExEXnWgu1N6VniQmESNCSuDqyIw2RdIlAoQGMWNMHsu05zedaC7U3pWeJCYRI0JK4OrIjDZF0iUChAYxY0wey7TnN51oLtTelZ4kJhEjQkrg6siMNkXSJQKEBjFjTB7LtOc5sTZuJIVrxNWgv7EWXcAY6cWywQOG277xySFhrDT94F3OyKfWiHLqlmv_oXJbr1zxtgshY9oNM4d7GtEUVBmDqyz5PXSkcq2RtE1DMKL5sSrxHM8eeN6P3EFKN8cHtZbT590taVaePcqcEeK9yPBAQR1knR29mbkpn3NIgtVE4wun8jCFWrJNhOPzk96Y8KNjIxk8zpiTajevHF62Ond259UEi6xkkSeHoA-MjQ6thX0kTpYGnyjWRGr0iP7VKHajgCKpGJhLF74sczq8BZw19g-cra0kRY57h60BoocXRmDv9-g2QbP88kKtLcwhgaH9dJrFEnmapdDfLxjZjGSi39lxicH7cyOsdIa8pv0ALqbLD4PNpudsowgQkWeEKGL-uqfrYd6cWKRX7qx_On1BS6uCD-10zPA07M-YlbBNorS-Kaa38shAYFdywzugsn78mHHtwng0_bxjZnBbgFXF33Ty3hmLScGG5SM9QG9mQI3xiAJlEhpvMBymGJoCVDUEvimmt_LIQGBXcsM7oLJ-_Jhx7cJ4NP28Y2ZwW4BVxdfCQYDJ0zdbk7c9DeZf1PmfNYJcoZ9NCzhX1BC77LpSt8JBgMnTN1uTtz0N5l_U-Z81glyhn00LOFfUELvsulK3wkGAydM3W5O3PQ3mX9T5nzWCXKGfTQs4V9QQu-y6UrfCQYDJ0zdbk7c9DeZf1PmfNYJcoZ9NCzhX1BC77LpSt8JBgMnTN1uTtz0N5l_U-Z81glyhn00LOFfUELvsulKwCvOP0qbP_NExGOzGva24AvGc_kgm-as6PkUGz84-E9oc6WrVZWZVfvKTmCgV26JMO49VEnEntOh7oEMfpiObZnTn_hNWw0nKrJqFxwV4huSNxnt6VGuWvOak0NdzPSEIejWMcmEFj67EpMVeNb0JtYCejtX1SVmypHBDn_9vDrRpSpeecHNzUsTymMjmJKzteBdsQLmsRpyKsxdUp5IIyGcJFbDvACzT3nvWVMOf6wbdS4S334Ll0AIcXLFVcEvIwCAAAAAAAAAJpwCL2Lynda4IT5V-3pMyUdIHQnmpk4mJJXC2599n8xrgi-2gZy-V07LXwRJCA7OYB8_ACvjBFvcyhYn9306huxsKJq6g0-53AiRVItVDfOcPeS5PUKPBL6cNSgo6fNd4sBB5lz-_WcG8A9WKjFXq0VAAAAAAAAAC-jjd4sRrBt8qD3BNA2ryO2QRNgZ1TICgRvpaZ8U3c00xPbK8hPo45L5VibujVIpqsE8VEwJ3fIFdLLiOaEZVVgY4hzs3g49V4hjWKYOqkJ-0uPKScr1j_HQ3_2C7-pXd3KrS2AkZmBGAQ55YZ4e1IVJ39YxDzVpDVd0OIk4m1Pj6gxaP0SeQdm6kNcqNf16HMKv9ggHaoIKiFoD8e1T06aXz7VBXuoFPHOcO8gZu7qne4pp9dyQhzUOmEoLcLVIC03PBWvli1owXR6mQy937V_pSjlb8gt-2bJldI9sntZGBKfbxqWMYAmXtAPg5acJBTi7XPVU47vZBgxej459Q73Ty3hmLScGG5SM9QG9mQI3xiAJlEhpvMBymGJoCVDUPdPLeGYtJwYblIz1Ab2ZAjfGIAmUSGm8wHKYYmgJUNQSvAAlia8kAtMVSkv64w69ck3dota_UjCBczgNdfm8EpK8ACWJryQC0xVKS_rjDr1yTd2i1r9SMIFzOA11-bwSvdPLeGYtJwYblIz1Ab2ZAjfGIAmUSGm8wHKYYmgJUNQSvAAlia8kAtMVSkv64w69ck3dota_UjCBczgNdfm8EpK8ACWJryQC0xVKS_rjDr1yTd2i1r9SMIFzOA11-bwSkrwAJYmvJALTFUpL-uMOvXJN3aLWv1IwgXM4DXX5vBKw44LUba9EhR1OutsWlZGSZ2mK0ukUUa1MeT3-G9khTDDjgtRtr0SFHU662xaVkZJnaYrS6RRRrUx5Pf4b2SFMMOOC1G2vRIUdTrrbFpWRkmdpitLpFFGtTHk9_hvZIUww44LUba9EhR1OutsWlZGSZ2mK0ukUUa1MeT3-G9khTDDjgtRtr0SFHU662xaVkZJnaYrS6RRRrUx5Pf4b2SFMAEFAAAAAAAAAGFiY2RlAABhYoKkYWGLAAMEBQYHCAkODwphYhBhY4UAAQIDBGFkBaRhYYcCAwQFBgcIYWIJYWOFAAECAwRhZAU"
+  },
+  "verifiableCredential": [
+    {
+      "type": "VerifiableCredential",
+      "proof": {
+        "type": "DataIntegrityProof",
+        "created": "2023-02-09T09:35:07Z",
+        "cryptosuite": "bbs-termwise-signature-2023",
+        "proofPurpose": "assertionMethod",
+        "verificationMethod": "did:example:issuer0#bls12_381-g2-pub001"
+      },
+      "credentialSubject": {
+        "type": "Person",
+        "isPatientOf": {
+          "type": "Vaccination",
+          "vaccine": "_:b11"
+        },
+        "worksFor": {
+          "name": "ABC Inc."
+        }
+      },
+      "expirationDate": "2025-01-01T00:00:00Z",
+      "issuanceDate": "2022-01-01T00:00:00Z",
+      "issuer": "did:example:issuer0"
+    },
+    {
+      "type": "VerifiableCredential",
+      "proof": {
+        "type": "DataIntegrityProof",
+        "created": "2023-02-03T09:49:25Z",
+        "cryptosuite": "bbs-termwise-signature-2023",
+        "proofPurpose": "assertionMethod",
+        "verificationMethod": "did:example:issuer3#bls12_381-g2-pub001"
+      },
+      "credentialSubject": {
+        "id": "_:b11",
+        "type": "Vaccine",
+        "status": "active"
+      },
+      "expirationDate": "2023-12-31T00:00:00Z",
+      "issuanceDate": "2020-01-01T00:00:00Z",
+      "issuer": "did:example:issuer3"
+    }
+  ]
+}
