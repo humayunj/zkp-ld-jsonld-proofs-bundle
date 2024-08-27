@@ -6,11 +6,10 @@ const vp = JSON.parse(fs.readFileSync("vp.json"));
 const kp = JSON.parse(fs.readFileSync("keypair0.json"));
 async function main() {
   try {
-    const norm = await zkpld.verifyProof(vp, kp, jsonld.documentLoader, {
+    const proof = await zkpld.verifyProof(vp, kp, jsonld.documentLoader, {
       challenge: "abcde",
     });
-    console.log(norm);
-    console.log(await zkpld.keyGen());
+    console.log(proof);
   } catch (er) {
     console.log(JSON.stringify(er));
   }
